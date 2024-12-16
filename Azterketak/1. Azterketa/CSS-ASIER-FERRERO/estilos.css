@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h4,
+p {
+  margin: 0px;
+}
+
+body {
+  background-color: white;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+header {
+  background-color: rgb(220, 44, 79);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 1em;
+}
+
+nav {
+  background-color: pink;
+  border-radius: 1em;
+  text-align: center;
+  padding-top: 50%;
+}
+
+nav div {
+  color: rgb(220, 44, 79);
+  margin-top: 15px;
+}
+
+.content_wrapper {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 12fr 2fr;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
+}
+
+article {
+  border: solid 1px black;
+  border-radius: 1em;
+  width: 95%;
+  height: 95%;
+  margin-left: 20px;
+  text-align: center;
+}
+
+article img {
+  width: 85%;
+  height: 75%;
+  border-radius: 1em;
+  margin-top: 20px;
+}
+
+.poli {
+  border: solid 1px black;
+  border-radius: 1em;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+
+.poli img {
+  width: 80%;
+  height: 250px;
+  border-radius: 1em;
+  margin: 20px;
+}
+
+aside {
+  background-color: pink;
+  border-radius: 1em;
+}
+
+aside article {
+  height: 50%;
+  width: 85%;
+  color: rgb(220, 44, 79);
+  margin: auto;
+  margin-top: 20px;
+}
+aside img {
+  height: 70%;
+  width: 80%;
+}
+
+ul {
+  color: rgb(220, 44, 79);
+  margin-top: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  border-top: solid 1px black;
+  margin-top: 20px;
+  background-color: pink;
+  padding-top: 40px;
+  padding-left: 25px;
+}
+
+footer img {
+  width: 40%;
+}

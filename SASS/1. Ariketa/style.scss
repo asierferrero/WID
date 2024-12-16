@@ -1,0 +1,38 @@
+nav {
+    background-color: #bc76ab;
+    color: black;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 40px;
+}
+
+nav ul li:hover {
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav li {
+    margin-right: 40px;
+}
+
+figure {
+    border: 1px solid black;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+figure img {
+    border-radius: 70px;
+    margin: 30px 30px 0px 30px;
+}
+
+figure figcaption {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 20px 0px 40px 0px;
+}

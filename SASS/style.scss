@@ -1,0 +1,21 @@
+@use 'style2';
+
+$color: #ccc;
+$letra: green;
+
+body {
+    background: $color;
+}
+
+h1 {
+    color: $letra;
+}
+
+@mixin pers($color) {
+    color: black;
+    border: 4px solid black;
+}
+
+.container2 {
+    @include pers($color);
+}
