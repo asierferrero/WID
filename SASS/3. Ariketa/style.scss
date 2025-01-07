@@ -1,0 +1,61 @@
+$botoi-koloreak: (
+    "error": #ff4d4d,
+    "warning": #ffcc00,
+    "accepted": #66cc66,
+    "normal": #3399ff
+);
+
+@each $izena, $kolorea in $botoi-koloreak {
+    .btn-#{$izena} {
+        background-color: $kolorea;
+        padding: 10px;
+        border-radius: 5px;
+        display: inline-block;
+
+        &:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        &:active {
+            background-color: orange;
+            color: white;
+        }
+    }
+}
+
+@function zutabe-mota($bikoiti) {
+    @if $bikoiti % 2 == 0 {
+        @return lightgray;
+    }
+
+    @else {
+        @return gray;
+    }
+}
+
+table {
+    border-collapse: collapse;
+
+    th, td {
+        padding: 10px;
+        border: 1px solid black;
+    }
+
+    @for $bikoiti from 1 to 5 {
+        td:nth-child(#{$bikoiti}) {
+            background-color: zutabe-mota($bikoiti);
+        }
+    }
+}
+
+.row {
+    display: flex;
+    
+    @for $zutabe from 1 to 8 {
+        .zut-#{$zutabe} {
+            flex: $zutabe / 8;
+            border: 1px solid black;
+            padding-bottom: 200px;
+        }
+    }
+}
