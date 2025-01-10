@@ -1,0 +1,139 @@
+$color-background: #FFFFFF;
+$color-header: #333333;
+$color-text: #707070;
+$color-secondary: #278bef;
+$color-h1: #000000;
+
+$botoi-koloreak: (
+    "principal": #3399ff,
+    "secundario": #707070,
+);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    border-top: 1rem solid $color-header;
+    position: fixed;
+    width: 100%;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+
+        .logo {
+            height: 50px;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                margin-left: 1.5rem;
+
+                a {
+                    color: $color-text;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+
+                a:hover {
+                    color: $color-secondary;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+
+
+.aurkezpena {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-text;
+    padding: 5rem 6rem 0 4rem;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: $color-h1;
+    }
+
+    img {
+        height: 250px;
+        width: 400px;
+        border-radius: 15px;
+        margin-left: 60px;
+    }
+}
+
+@each $izena, $kolorea in $botoi-koloreak {
+    .btn-#{$izena} {
+        background-color: $kolorea;
+        padding: 10px;
+        margin: 10px 5px 0 0;
+        border-radius: 5px;
+        border: 1px solid white;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.azalpena {
+    padding: 2rem;
+    margin-top: 50px;
+}
+
+.zerbitzuak {
+    text-align: center;
+}
+
+.zerbitzu-titulu h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.zerbitzu-mota {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+    i {
+        color: $color-secondary;
+        margin-bottom: 1rem;
+    }
+    
+    h3 {
+        margin-bottom: 1rem;
+    }
+    
+    p {
+        color: $color-text;
+        margin-bottom: 2rem;
+    }
+}
+
+footer {
+    background-color: $color-header;
+    color: $color-text;
+
+    .logo-foot {
+        height: 40px;
+    }
+    
+    .footer-edukia {
+        text-align: center;
+        margin-top: 20px;
+    }
+}

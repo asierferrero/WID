@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+}
+
+header {
+  background-color: #1d1d88;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+header nav ul li a {
+  color: #dfdf10;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+}
+header nav ul li a:hover {
+  font-size: 20px;
+}
+
+.edukia h1 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.edukia .elementu {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.edukia .elementu .card {
+  flex-direction: column;
+}
+.edukia .elementu .card img {
+  width: 300px;
+  height: 200px;
+  border-radius: 1rem;
+}
+.edukia .elementu .card figcaption {
+  text-align: center;
+  margin-top: 1rem;
+}
+.edukia .elementu .card p {
+  margin-top: 1rem;
+  font-size: small;
+  text-align: center;
+  width: 300px;
+}
+.edukia .botoi {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+.edukia .botoi button {
+  padding: 0.6rem 1.2rem;
+  background-color: #1d1d88;
+  color: #dfdf10;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.edukia .botoi button:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  background-color: #1d1d88;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 2rem;
+  font-size: large;
+}
+
+/*# sourceMappingURL=main.css.map */

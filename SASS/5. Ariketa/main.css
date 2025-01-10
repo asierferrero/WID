@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  border-top: 1rem solid #333333;
+  position: fixed;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+header nav .logo {
+  height: 50px;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  margin-left: 1.5rem;
+}
+header nav ul li a {
+  color: #707070;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  color: #278bef;
+  font-size: 18px;
+}
+
+.aurkezpena {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #707070;
+  padding: 5rem 6rem 0 4rem;
+}
+.aurkezpena h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+.aurkezpena img {
+  height: 250px;
+  width: 400px;
+  border-radius: 15px;
+  margin-left: 60px;
+}
+
+.btn-principal {
+  background-color: #3399ff;
+  padding: 10px;
+  margin: 10px 5px 0 0;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.btn-principal:hover {
+  transform: scale(1.1);
+}
+
+.btn-secundario {
+  background-color: #707070;
+  padding: 10px;
+  margin: 10px 5px 0 0;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.btn-secundario:hover {
+  transform: scale(1.1);
+}
+
+.azalpena {
+  padding: 2rem;
+  margin-top: 50px;
+}
+
+.zerbitzuak {
+  text-align: center;
+}
+
+.zerbitzu-titulu h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.zerbitzu-mota {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.zerbitzu-mota i {
+  color: #278bef;
+  margin-bottom: 1rem;
+}
+.zerbitzu-mota h3 {
+  margin-bottom: 1rem;
+}
+.zerbitzu-mota p {
+  color: #707070;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #333333;
+  color: #707070;
+}
+footer .logo-foot {
+  height: 40px;
+}
+footer .footer-edukia {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

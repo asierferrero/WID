@@ -1,0 +1,99 @@
+$color-primary: #1d1d88;
+$color-secondary: #dfdf10;
+
+@mixin center-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+* {
+    margin: 0;
+}
+
+header {
+    background-color: $color-primary;
+
+    nav {
+        ul {
+            @include center-flex;
+            list-style: none;
+
+            li {
+                a {
+                    color: $color-secondary;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: large;
+                }
+
+                a:hover {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+.edukia {
+    h1 {
+        font-size: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .elementu {
+        @include center-flex;
+        margin-top: 4rem;
+        margin-left: 200px;
+        margin-right: 200px;
+
+        .card {
+            flex-direction: column;
+
+            img {
+                width: 300px;
+                height: 200px;
+                border-radius: 1rem;
+            }
+
+            figcaption {
+                text-align: center;
+                margin-top: 1rem;
+            }
+
+            p {
+                margin-top: 1rem;
+                font-size: small;
+                text-align: center;
+                width: 300px;
+            }
+        }
+    }
+
+    .botoi {
+        @include center-flex;
+        margin-top: 4rem;
+
+        button {
+            padding: 0.6rem 1.2rem;
+            background-color: $color-primary;
+            color: $color-secondary;
+            border: none;
+            border-radius: 0.2rem;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $color-primary;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 2rem;
+    font-size: large;
+}
+
